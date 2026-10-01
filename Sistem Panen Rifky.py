@@ -18,3 +18,22 @@ def input_data_panen():
 
 if __name__ == "__main__":
     input_data_panen()
+
+def buat_laporan_panen(data):
+    """Fungsi untuk menampilkan ringkasan laporan hasil panen."""
+    print("\n================================")
+    print("      LAPORAN HASIL PANEN       ")
+    print("================================")
+    print(f"Tanaman      : {data.get('tanaman')}")
+    print(f"Jumlah Panen : {data.get('jumlah_kg')} kg")
+    print(f"Tanggal      : {data.get('tanggal')}")
+    print("Status       : Laporan berhasil dibuat.")
+    print("================================")
+
+if __name__ == "__main__":
+    contoh_data = {
+        "tanaman": "Jagung",
+        "jumlah_kg": 500.0,
+        "tanggal": "2026-06-10"
+    }
+    buat_laporan_panen(contoh_data)
