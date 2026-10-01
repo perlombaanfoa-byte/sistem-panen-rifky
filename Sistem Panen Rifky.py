@@ -4,7 +4,7 @@ def input_data_panen():
     """Fungsi untuk memasukkan data dasar hasil panen."""
     print("=== Masukkan Data Panen Dasar ===")
     nama_tanaman = input("Nama Tanaman: ")
-    jumlah_panen = float(input("Jumlah Panen (kg): "))
+    jumlah_panen = float(input("Jumlah Panen (mg): "))
     tanggal = input("Tanggal Panen (YYYY-MM-DD): ")
     
     data_panen = {
